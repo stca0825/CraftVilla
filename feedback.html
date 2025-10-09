@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Craftsvilla Workshops | Feedback</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lato:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>Craftsvilla Workshops</h1>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="booking.html">Book a Workshop</a></li>
+          <li><a href="feedback.html" class="active">Feedback</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="feedback">
+      <h2>We Value Your Feedback 💬</h2>
+      <p>
+        Thank you for attending one of our workshops! Please share your thoughts
+        — your input helps us improve and inspire others to create.
+      </p>
+
+      <form id="feedbackForm" action="#" method="post">
+        <label for="workshop">Which workshop did you attend?</label><br />
+        <select name="workshop" id="workshop" required>
+          <option value="">-- Please select --</option>
+          <option value="mosaic">Mosaic Art</option>
+          <option value="watercolor">Watercolor Painting</option>
+          <option value="canvas">Canvas Painting</option></select
+        ><br /><br />
+
+        <label for="comments">Your Feedback:</label><br />
+        <textarea
+          id="comments"
+          name="comments"
+          rows="6"
+          cols="50"
+          placeholder="Share your experience here..."
+          required
+        ></textarea
+        ><br /><br />
+
+        <label for="email">Email (optional):</label><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="you@example.com"
+        /><br /><br />
+
+        <button type="submit">Submit Feedback</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Craftsvilla Workshops | All Rights Reserved</p>
+      <p>
+        Contact: <a href="mailto:info@craftsvilla.com">info@craftsvilla.com</a>
+      </p>
+    </footer>
+
+    <script src="js/feedback.js"></script>
+  </body>
+</html>
